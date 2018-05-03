@@ -1,0 +1,8 @@
+Routines:
+
+ · pthread_crate(thread, attr, start_routine, arg) - Creates a new thread and makes it executable.
+ 	- thread: unique identifier for the new thread
+	- attr:	  unique object that may be used to set thread attributes- NULL for the default values.
+	- start_routine: C routine thet the thread will execute once it is created.
+	- arg:    Single argument fthat may be passed to start_routine. Must be passed by reference as a pointer
+			  cast of type void. NULL if no arguments are to be passed.
